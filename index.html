@@ -174,6 +174,54 @@
         </div>
     </section>
 
+    <!--Quiz section-->
+    <div id="quiz-section" class="container text-white bg-dark bg-gradient bg-opacity-75">
+        <!--Top bar with username, audio icon and timer-->
+        <div class="row p-2">
+            <div class="col text-start audio-icon-logo">
+                <div class="sound-on hide"><i class="bi bi-volume-up-fill increase" aria-hidden="true"></i> </div>
+                <div class="sound-off"><i class="bi bi-volume-mute-fill increase" aria-hidden="true"></i></div>
+            </div> 
+            <div class="col text-center">
+                <i class="bi bi-person-circle" aria-hidden="true"></i>
+                <span id="username2"></span>
+            </div> 
+            <div class="col text-end timer-bar">
+                <span id="timer"></span>
+                <i class="bi bi-stopwatch-fill"></i>
+            </div>
+        </div>
+        <hr>
+        <!--Body with multiple choice quiz-->
+        <div class="row text-center">
+            <span id="current-question"></span>
+        </div>
+        <div class="row answer-buttons">
+            <div class="col-md-6 col-sm-12 text-center p-3 d-grid">
+                <button id="answer1-btn" class="btn btn-primary choices" value="A">Answer 1</button>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center p-3 d-grid">
+                <button id="answer2-btn" class="btn btn-primary choices" value="B">Answer 2</button>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center p-3 d-grid">
+                <button id="answer3-btn" class="btn btn-primary choices" value="C">Answer 3</button>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center p-3 d-grid">
+                <button id="answer4-btn" class="btn btn-primary choices" value="D">Answer 4</button>
+            </div>
+            <div class="row">
+                <div class="col text-center p-3">
+                    <button type="button" data-type="next-question" id="next-question-btn" class="btn btn-outline-light">
+                    Next question
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row p-2">
+            <span id="score"></span>
+        </div>
+    </div>
     
 
 <!--Bootstrap 5.3.0 JS Bundle-->
