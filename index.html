@@ -26,6 +26,54 @@
 </head>
 
 <body>
+
+    <!--Start section with introduction-->
+    <section id="start-section" class="start-section">
+        <div class="container text-white bg-dark bg-gradient bg-opacity-75">
+            <!--Top bar with audio icon and instructions-->
+            <div class="row p-2">
+                <div class="col text-start audio-icon-logo">
+                    <div class="sound-on hide"><i class="bi bi-volume-up-fill increase" aria-hidden="true"></i> </div>
+                    <div class="sound-off"><i class="bi bi-volume-mute-fill increase" aria-hidden="true"></i></div>
+                </div> 
+                <div class="col text-end">
+                    <i class="bi bi-info-circle-fill increase" aria-hidden="true" 
+                    data-bs-toggle="modal" data-bs-target="#instruction-modal">
+                    </i> 
+                </div>
+            </div>
+            <hr>
+            <!--Body of the start section with description of the game-->
+            <div class="row text-center">
+                <h1>Welcome to the Harry Potter Quiz!</h1>
+                <p>Beware, enemies of the questions! 
+                Before you hop on the Hogwarts Express, you'll have to prove how well you really know your way around 
+                the magical world of wizardry and witchcraft. 
+                From Parsel to Patronus, our Harry Potter fan quiz will separate the muggles from the wizards and decide 
+                whether you deserve a place in one of the four houses! 
+                You'll need a good swig of Felix Felicis to answer all questions correctly...
+                <br>
+                <br>
+                But let`s begin easily:
+                </p> 
+                <br>
+                <p>Please enter your name:</p>
+                <div class="input p-2">
+                    <input type="text" id="user" name="user" maxlength="15" aria-label="Username" required>
+                    <br>
+                    <button type="button" id="start-btn" class="btn btn-outline-light">
+                    <i class="bi bi-lock-fill"></i>Alohomora!</button>
+                    <div id="error-message">
+                    <p class="user-log-error" >
+                    Please try again. 
+                    <br>
+                    Username must be between 3 and 15 characters.
+                    </p>  
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
     
   
 
