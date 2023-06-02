@@ -107,7 +107,72 @@
           </div>
         </div>
     </div>
-  
+
+    <!--Difficulty section-->
+    <section id="difficulty-section">
+        <div class="container text-white bg-dark bg-gradient bg-opacity-75">
+            <!--Top bar with audio icon, username and instructions-->
+            <div class="row p-2">
+                <div class="col text-start audio-icon-logo">
+                    <div class="sound-on hide"><i class="bi bi-volume-up-fill increase" aria-hidden="true"></i></div>
+                    <div class="sound-off"><i class="bi bi-volume-mute-fill increase" aria-hidden="true"></i></div>
+                </div> 
+                <div class="col text-center">
+                    <i class="bi bi-person-circle" aria-hidden="true">
+                    </i><span id="username"></span>
+                </div> 
+                <div class="col text-end">
+                    <i class="bi bi-info-circle-fill increase" aria-hidden="true" 
+                    data-bs-toggle="modal" data-bs-target="#instruction-modal">
+                    </i> 
+                </div>
+            </div>
+            <hr>
+            <!--Body to choose difficulty of the game-->
+            <div class="row text-center">
+                <h1>Select your difficulty</h1>
+                <p><b>
+                How well do you think you know the magic world?   
+                </b></p> 
+                <br>
+                <p><b>Choose a level to test your knowledge:</b></p>
+                <div class="row p-3">
+                    <div class="col-lg-3 col-md-6 p-3">
+                        <p>You think you don´t know anything? 
+                        <br>
+                        Choose 'easy' for Slytherin!</p>
+                        <button data-type="easy" id="easy-btn" class="difficulty-btn">
+                            <img class="img-thumbnail" src="assets/images/slytherin.png" alt="logo slytherin">
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-3">
+                        <p>You think you are a little tough?
+                        <br>
+                        Choose 'medium' for Hufflepuff!</p>
+                        <button data-type="medium" id="medium-btn" class="difficulty-btn">
+                            <img class="img-thumbnail" src="assets/images/hufflepuff.png" alt="logo hufflepuff">
+                        </button> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-3">
+                        <p>You think you`re like a really roar?
+                        <br>
+                        Choose 'hard' for Gryffindor!</p>
+                        <button data-type="hard" id="hard-btn" class="difficulty-btn">
+                            <img class="img-thumbnail" src="assets/images/gryffindor.png" alt="logo gryffindor">
+                        </button>  
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-3">
+                        <p>You think you are a really pro? 
+                        <br>
+                        Choose 'professional' for Ravenclaw!</p>
+                        <button data-type="professional" id="pro-btn" class="difficulty-btn">
+                            <img class="img-thumbnail" src="assets/images/ravenclaw.png" alt="logo ravenclaw">
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
 
     
 
