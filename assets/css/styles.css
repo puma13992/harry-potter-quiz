@@ -43,3 +43,14 @@ button:hover {
 .hide {
     display: none;
   }
+
+/*Difficulty button description - Code used from the Love Maths project*/
+.difficulty-btn:hover {
+    transform:scale(1.1);
+  }
+  
+.difficulty-btn::after {
+    content: attr(data-type);
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
