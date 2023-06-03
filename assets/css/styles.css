@@ -54,3 +54,12 @@ button:hover {
     font-size: 1rem;
     text-transform: uppercase;
   }
+
+/*Image dimensions in end section*/ 
+.img-fluid {
+    height: 100%!important;
+  }
+  
+#score-image {
+    max-height: 350px;
+  }
