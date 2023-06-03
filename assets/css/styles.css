@@ -79,3 +79,15 @@ footer {
       transform: translateY(50vh);
     }
   }
+
+/*for small screens size from 540px wide and down*/
+@media screen and (max-width: 540px) {
+    .container {
+      transform: translateY(5vh);
+    }
+  
+    footer {
+      position: relative;
+      transform: translateY(25vh);
+    } 
+  }
