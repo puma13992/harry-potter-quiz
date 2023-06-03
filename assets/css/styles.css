@@ -32,3 +32,9 @@ input {
 button:hover {
     cursor: url('../images/magic.svg'), pointer!important;
   }
+
+/*Sound and instruction icon hover effect*/
+.increase:hover {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
