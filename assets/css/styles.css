@@ -63,3 +63,9 @@ button:hover {
 #score-image {
     max-height: 350px;
   }
+
+/*Footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+  }
