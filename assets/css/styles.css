@@ -22,3 +22,10 @@ p {
 .container {
     transform: translateY(15vh);
   }
+
+/*Input*/
+input {
+    margin-bottom: 10px!important;
+  }
+
+
