@@ -28,4 +28,7 @@ input {
     margin-bottom: 10px!important;
   }
 
-
+/*Button hover effect*/
+button:hover {
+    cursor: url('../images/magic.svg'), pointer!important;
+  }
