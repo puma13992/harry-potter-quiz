@@ -4,3 +4,16 @@ body {
     background-size: cover;
     }
   
+/*Fonts*/
+h1, h2, h3, h4, h5, h6, p, b, li, span {
+    font-family: serif;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    font-family: serif!important;
+    font-size: 1.2rem!important;
+  }
