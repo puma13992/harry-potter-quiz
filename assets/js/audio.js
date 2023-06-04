@@ -15,3 +15,14 @@ const correctAudio = new Audio("assets/sounds/magic-tinkle.mp3");
 const incorrectAudio = new Audio("assets/sounds/broken-glas.mp3");
 const sound = new Audio("assets/sounds/harry-potter-theme.mp3");
 sound.loop = true;
+
+/**
+ * Function to have the option for sound on or not
+ */
+function toggleAudio() {
+    if (isPlaying) {
+      toggleAudioOff();
+    } else {
+      toggleAudioOn();
+    }
+  }
