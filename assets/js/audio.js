@@ -83,3 +83,14 @@ function incorrectSound() {
       incorrectAudio.pause();
     }
   }
+
+/**
+ * Play a sound when the player clicks a button
+ */
+function buttonSound() {
+    if (isPlaying) {
+      buttonAudio.play();
+    } else {
+      buttonAudio.pause();
+    }
+  }
