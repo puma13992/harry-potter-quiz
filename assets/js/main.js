@@ -163,3 +163,14 @@ let answer1 = document.getElementById("answer1-btn");
 let answer2 = document.getElementById("answer2-btn");
 let answer3 = document.getElementById("answer3-btn");
 let answer4 = document.getElementById("answer4-btn");
+
+/**
+ * Function to reset background colors of the buttons 
+ * after clicked on an answer
+ */
+function resetButtonColors() {
+  answer1.style.backgroundColor = "";
+  answer2.style.backgroundColor = "";
+  answer3.style.backgroundColor = "";
+  answer4.style.backgroundColor = "";
+}
