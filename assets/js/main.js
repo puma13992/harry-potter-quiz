@@ -40,3 +40,9 @@ let myInput = document.getElementById('myInput');
 myModal.addEventListener('shown.bs.modal', () => {
   myInput.focus();
 });
+
+//Event listener for the start button
+document.getElementById("start-btn").addEventListener("click", function() {
+  buttonSound();
+  checkUsername();
+});
