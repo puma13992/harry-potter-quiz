@@ -59,7 +59,7 @@ function countdown() {
   }
 
 /**
- * Stops the timer
+ * Fucntion to stop the timer
  */
 function stopTimer() {
     clearInterval(timer);
