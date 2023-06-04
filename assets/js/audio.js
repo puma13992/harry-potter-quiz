@@ -50,3 +50,14 @@ function toggleAudioOff() {
       soundOn[i].classList.add("hide");
     }
   }
+
+/**
+ * Loop through the audio-icon-logo and call toggleAudio() when the player clicks
+ */
+let audioIconLogo = document.getElementsByClassName("audio-icon-logo");
+
+for (let i = 0; i < audioIconLogo.length; i++) {
+  audioIconLogo[i].addEventListener("click", () => {
+    toggleAudio();
+  });
+}
