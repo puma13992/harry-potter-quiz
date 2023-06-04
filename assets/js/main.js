@@ -174,3 +174,41 @@ function resetButtonColors() {
   answer3.style.backgroundColor = "";
   answer4.style.backgroundColor = "";
 }
+
+/**
+ * Show questions, hide next question button
+ * until answer is clicked and reset timer and
+ * button background colors after each clicked answer
+ */
+function showQuestion(questionIndex) {
+
+  // Timer
+  gameTimer.innerHTML = 30;
+  gameTimer.style.color = "#fff";
+  startTimer();
+
+  // Reset button colors
+  resetButtonColors();
+
+  // Call questions and choices from array
+  let currentQuestion = questions[questionIndex].question;
+  let choices = questions[questionIndex].choices;
+
+  // Hide next question button until answer is clicked
+  nextQuestionButton.style.display = "none";
+
+  // Display question
+  let questionElement = document.getElementById("current-question");
+
+  for (let i = 0; i < currentQuestion.length; i++) {
+    questionElement.innerHTML = "<h2>" + currentQuestion + "</h2>"; 
+  }
+
+  // Dispaly answer choices
+  for (let i = 0; i < choices.length; i++) {
+    answer1.innerText = choices[0];
+    answer2.innerText = choices[1];
+    answer3.innerText = choices[2];
+    answer4.innerText = choices[3];
+  } 
+}
