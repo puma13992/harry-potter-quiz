@@ -19,3 +19,13 @@ let easyBtn = document.getElementById("easy-btn");
 let mediumBtn = document.getElementById("medium-btn");
 let hardBtn = document.getElementById("hard-btn");
 let proBtn = document.getElementById("pro-btn");
+
+/**
+ * Show the start section with username log-in and instruction icon
+ */
+function runStartSection() {
+  errorMessage.style.display = "none";
+  difficultySection.style.display = "none";
+  quizSection.style.display = "none";
+  endSection.style.display = "none";  
+}
