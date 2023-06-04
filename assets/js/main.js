@@ -92,7 +92,7 @@ document.getElementById("user").addEventListener("keydown", function(event) {
 });
 
 /**
- * Set up game levels event listeners
+ * Set up game level event listener
  * and based on user's selection display relevant game level and settings
  * after a small delay
  */
@@ -129,3 +129,8 @@ proBtn.addEventListener("click", function() {
     runQuiz("pro");
   }, 500);
 });
+
+// Variables for questions
+let shuffledQuestions = 0;
+shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+let maxQuestions; 
