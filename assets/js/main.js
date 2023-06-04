@@ -90,3 +90,42 @@ document.getElementById("user").addEventListener("keydown", function(event) {
     checkUsername();
   }
 });
+
+/**
+ * Set up game levels event listeners
+ * and based on user's selection display relevant game level and settings
+ * after a small delay
+ */
+let getLevel = "";
+
+easyBtn.addEventListener("click", function() {
+  buttonSound();
+  getLevel = "easy";
+  setTimeout(function () {
+    runQuiz("easy");
+  }, 500);
+});
+
+mediumBtn.addEventListener("click",  function() {
+  buttonSound();
+  getLevel = "medium";
+  setTimeout(function () {
+    runQuiz("medium");
+  }, 500);
+});
+
+hardBtn.addEventListener("click", function() {
+  buttonSound();
+  getLevel = "hard";
+  setTimeout(function () {
+    runQuiz("hard");
+  }, 500);
+});
+
+proBtn.addEventListener("click", function() {
+  buttonSound();
+  getLevel = "pro";
+  setTimeout(function () {
+    runQuiz("pro");
+  }, 500);
+});
