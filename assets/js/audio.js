@@ -72,3 +72,14 @@ function correctSound() {
       correctAudio.pause();
     }
   }
+
+/**
+ * Play a sound when the player answers incorrectly
+ */
+function incorrectSound() {
+    if (isPlaying) {
+      incorrectAudio.play();
+    } else {
+      incorrectAudio.pause();
+    }
+  }
