@@ -46,3 +46,36 @@ document.getElementById("start-btn").addEventListener("click", function() {
   buttonSound();
   checkUsername();
 });
+
+/**
+ * Verification of the username input
+ * Code used from the Sunshine Guessing project
+ * https://github.com/aleksandracodes/CI_PP2_SunshineGuessing/blob/main/assets/js/game.js 
+ * and complemented and adapted with parts of own code
+ */
+function checkUsername() {
+  let username = document.getElementById("user").value.trim();
+
+  if (username.length >= 3 && username.length <= 15) {
+    mainSection.style.display = "none";
+    difficultySection.style.display = "block";
+    quizSection.style.display = "none";
+    endSection.style.display = "none";
+    document.getElementById("username").innerText = "Hey " + username + "!";
+
+    // Username in quiz section
+    document.getElementById("username2").innerText = "Hey " + username + "!";
+
+    // Username in end section
+    document.getElementById("username3").innerText = username;
+
+  } else {
+    errorMessage.style.display = "block";
+    difficultySection.style.display = "none";
+    quizSection.style.display = "none";
+    endSection.style.display = "none";  
+    document.getElementById("user").focus();    
+  }
+}
+
+checkUsername();
