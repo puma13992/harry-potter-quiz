@@ -57,4 +57,10 @@ function countdown() {
       }
     }
   }
-  
+
+/**
+ * Stops the timer
+ */
+function stopTimer() {
+    clearInterval(timer);
+  }
