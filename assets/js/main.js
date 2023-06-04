@@ -134,3 +134,24 @@ proBtn.addEventListener("click", function() {
 let shuffledQuestions = 0;
 shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 let maxQuestions; 
+
+/**
+ * Function to run the game and display chosen game level 
+ */
+function runQuiz(level) {
+  mainSection.style.display = "none";
+  difficultySection.style.display = "none";
+  quizSection.style.display = "block";
+  endSection.style.display = "none";
+  showQuestion(0, shuffledQuestions);
+
+  if (level === "easy") {
+    maxQuestions = shuffledQuestions.slice(0, 4);
+  } else if (level === "medium") {
+    maxQuestions = shuffledQuestions.slice(0, 9);
+  } else if (level === "hard") {
+    maxQuestions = shuffledQuestions.slice(0, 14);
+  } else if (level === "pro") {
+    maxQuestions = shuffledQuestions.slice(0, 19);
+  }
+}
