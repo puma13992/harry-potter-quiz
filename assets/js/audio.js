@@ -38,3 +38,15 @@ function toggleAudioOn() {
       soundOn[i].classList.remove("hide");
     }
   }
+
+/**
+ * Toggle audio off
+ */
+function toggleAudioOff() {
+    isPlaying = false;
+    sound.pause();
+    for (let i = 0; i < soundOff.length && soundOn.length; i++) {
+      soundOff[i].classList.remove("hide");
+      soundOn[i].classList.add("hide");
+    }
+  }
