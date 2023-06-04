@@ -155,3 +155,11 @@ function runQuiz(level) {
     maxQuestions = shuffledQuestions.slice(0, 19);
   }
 }
+
+// Variables for playing the game
+let questionIndex = 0;
+let answerClicked = false;
+let answer1 = document.getElementById("answer1-btn");
+let answer2 = document.getElementById("answer2-btn");
+let answer3 = document.getElementById("answer3-btn");
+let answer4 = document.getElementById("answer4-btn");
