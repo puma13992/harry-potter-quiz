@@ -79,3 +79,14 @@ function checkUsername() {
 }
 
 checkUsername();
+
+/**
+ * Input of username using by pressing enter key
+ * Code used from the Sunshine Guessing project
+ * https://github.com/aleksandracodes/CI_PP2_SunshineGuessing/blob/main/assets/js/game.js 
+ */
+document.getElementById("user").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    checkUsername();
+  }
+});
