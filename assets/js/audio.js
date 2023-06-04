@@ -61,3 +61,14 @@ for (let i = 0; i < audioIconLogo.length; i++) {
     toggleAudio();
   });
 }
+
+/**
+ * Play a sound when the player answers correctly
+ */
+function correctSound() {
+    if (isPlaying) {
+      correctAudio.play();
+    } else {
+      correctAudio.pause();
+    }
+  }
