@@ -29,3 +29,14 @@ function runStartSection() {
   quizSection.style.display = "none";
   endSection.style.display = "none";  
 }
+
+/**
+ * Show modal with instructions
+ * using Bootstrap library
+ */ 
+let myModal = document.getElementById('instruction-modal');
+let myInput = document.getElementById('myInput');
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus();
+});
