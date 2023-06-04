@@ -10,3 +10,20 @@
 const gameTimer = document.getElementById("timer");
 let timeLeft;
 let timer;
+
+/**
+ * Used to start the time for the player and counts down every 1 second. Works in conjunction with countdown()
+ * and takes in the timeLeft parameter to set the time
+ */
+function startTimer() {
+    timeLeft = 30;
+    timer = setInterval(function () {
+      countdown();
+      gameTimer.innerHTML = timeLeft;
+      if (timeLeft < 11) {
+          gameTimer.style.color = "red";
+        } else {
+          gameTimer.style.color = "#fff";
+        }
+    }, 1000);
+  }
