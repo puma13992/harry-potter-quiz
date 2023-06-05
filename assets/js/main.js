@@ -245,3 +245,20 @@ nextQuestionButton.addEventListener("click", function() {
     }
   }, 500);
 });
+
+// Set up event listener for answer options
+answer1.addEventListener("click", function() {
+  checkAnswer(0);
+});
+  
+answer2.addEventListener("click", function() {
+  checkAnswer(1);
+});
+  
+answer3.addEventListener("click", function() {
+  checkAnswer(2);
+});
+  
+answer4.addEventListener("click", function() {
+  checkAnswer(3);
+});
