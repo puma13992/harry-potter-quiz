@@ -212,3 +212,36 @@ function showQuestion(questionIndex) {
     answer4.innerText = choices[3];
   } 
 }
+
+/*
+ * Show next question after clicking on next question button
+ */
+let nextQuestionButton = document.getElementById("next-question-btn");
+
+nextQuestionButton.addEventListener("click", function() {
+
+  //Play button sound
+  buttonSound();
+
+  //Small delay to show the next question 
+  setTimeout(function () {
+    
+    // Reset pointer events from the answer buttons
+    answer1.style.pointerEvents = "auto";
+    answer2.style.pointerEvents = "auto";
+    answer3.style.pointerEvents = "auto";
+    answer4.style.pointerEvents = "auto";
+
+    // Show next question or finish quiz if there are no more questions left
+    if (questionIndex < maxQuestions.length) {
+      resetButtonColors();
+      showQuestion(++questionIndex);
+
+    } else {
+      mainSection.style.display = "none";
+      difficultySection.style.display = "none";
+      quizSection.style.display = "none";
+      showEndSection();
+    }
+  }, 500);
+});
