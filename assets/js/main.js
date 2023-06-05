@@ -426,3 +426,13 @@ function showEndSection() {
   let numberQuestions = maxQuestions.length+1;
   numberQuestionsElement.textContent = numberQuestions.toString();
 }
+
+/**
+ * Event listener and function
+ * for try again button
+ * Code used from the Astronomy quiz project
+ * https://github.com/MikeR94/CI-Project-Portfolio-2/blob/main/assets/js/main.js 
+ */
+document.getElementById("try-again-btn").addEventListener("click", function reload() {
+  window.location.reload();
+});
