@@ -331,3 +331,82 @@ const imageRon = 'assets/images/ron-weasley-sketch.png';
 const imageHarry = 'assets/images/harry-potter-sketch.png';
 const imageHermione = 'assets/images/hermione-granger-sketch.png';
 const imageDumbledore = 'assets/images/albus-dumbledore-sketch.png';
+
+/**
+ * Function to get the final score and
+ * to show message and image
+ * at the end section based on total correct score and level
+ * Code for the function used from the Love Maths project
+ */
+function finalScore() {
+  let endScore = parseInt(document.getElementById("score-correct").innerText);
+  document.getElementById("score-correct").innerText = ++endScore;
+
+  // Level easy
+  if (getLevel === "easy") {
+    if (endScore > 3) {
+      scoreMessage.innerText = "You are a true magic genius! Be ready for your owl from Hogwarts.";
+      scoreImage.innerHTML = "<img src='" + imageDumbledore + "' class='img-fluid p-2'>";  
+    } else if (endScore === 3) {
+      scoreMessage.innerText = "You're on a good way!";
+      scoreImage.innerHTML = "<img src='" + imageHermione + "' class='img-fluid p-2'>";
+    } else if (endScore === 2) {
+      scoreMessage.innerText = "Not bad, but it could be better...";
+      scoreImage.innerHTML = "<img src='" + imageHarry + "' class='img-fluid p-2'>";
+    } else if (endScore <= 1) {
+      scoreMessage.innerText = "Mnnnaa, maybe you'll try again?";
+      scoreImage.innerHTML = "<img src='" + imageRon + "' class='img-fluid p-2'>";
+    } 
+  }
+
+  // Level medium
+  if (getLevel === "medium") {
+    if (endScore > 8) {
+      scoreMessage.innerText = "You are a true magic genius! Be ready for your owl from Hogwarts.";
+      scoreImage.innerHTML = "<img src='" + imageDumbledore + "' class='img-fluid p-2'>";  
+    } else if (endScore === 6 || endScore === 7 || endScore === 8) {
+      scoreMessage.innerText = "You're on a good way!";
+      scoreImage.innerHTML = "<img src='" + imageHermione + "' class='img-fluid p-2'>";
+    } else if (endScore === 3 && endScore <= 5) {
+      scoreMessage.innerText = "Not bad, but it could be better...";
+      scoreImage.innerHTML = "<img src='" + imageHarry + "' class='img-fluid p-2'>";
+    } else if (endScore <= 2) {
+      scoreMessage.innerText = "Mnnnaa, maybe you'll try again?";
+      scoreImage.innerHTML = "<img src='" + imageRon + "' class='img-fluid p-2'>";
+    }
+  }
+
+  // Level hard
+  if (getLevel === "hard") {
+    if (endScore > 13) {
+      scoreMessage.innerText = "You are a true magic genius! Be ready for your owl from Hogwarts.";
+      scoreImage.innerHTML = "<img src='" + imageDumbledore + "' class='img-fluid p-2'>";  
+    } else if (endScore === 9 && endScore <= 13) {
+      scoreMessage.innerText = "You're on a good way!";
+      scoreImage.innerHTML = "<img src='" + imageHermione + "' class='img-fluid p-2'>";
+    } else if (endScore === 4 && endScore <= 8) {
+      scoreMessage.innerText = "Not bad, but it could be better...";
+      scoreImage.innerHTML = "<img src='" + imageHarry + "' class='img-fluid p-2'>";
+    } else if (endScore <= 3) {
+      scoreMessage.innerText = "Mnnnaa, maybe you'll try again?";
+      scoreImage.innerHTML = "<img src='" + imageRon + "' class='img-fluid p-2'>";
+    }
+  }
+
+  // Level pro
+  if (getLevel === "pro") {
+    if (endScore >= 18) {
+      scoreMessage.innerText = "You are a true magic genius! Be ready for your owl from Hogwarts.";
+      scoreImage.innerHTML = "<img src='" + imageDumbledore + "' class='img-fluid p-2'>";  
+    } else if (endScore === 12 && endScore <= 17) {
+      scoreMessage.innerText = "You're on a good way!";
+      scoreImage.innerHTML = "<img src='" + imageHermione + "' class='img-fluid p-2'>";
+    } else if (endScore === 5 && endScore <= 11) {
+      scoreMessage.innerText = "Not bad, but it could be better...";
+      scoreImage.innerHTML = "<img src='" + imageHarry + "' class='img-fluid p-2'>";
+    } else if (endScore <= 4) {
+      scoreMessage.innerText = "Mnnnaa, maybe you'll try again?";
+      scoreImage.innerHTML = "<img src='" + imageRon + "' class='img-fluid p-2'>";
+    }
+  }
+}
