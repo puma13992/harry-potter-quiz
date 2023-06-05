@@ -264,8 +264,8 @@ answer4.addEventListener("click", function() {
 });
 
 /**
- * Check answers and disable button click after 
- * click on one answer
+ * Check answers and disable answer buttons after 
+ * click on an answer
  */
 function checkAnswer(selectedAnswer) {
   let correctAnswer = shuffledQuestions[questionIndex].answer;
@@ -299,3 +299,9 @@ function checkAnswer(selectedAnswer) {
     nextQuestionButton.style.display = "initial";
   }
 }
+
+// Variables for score and score images
+let score = 0;
+let scoreElement = document.getElementById("score");
+let correctImage = 'assets/images/hogwarts-logo.png';
+let wrongImage = 'assets/images/broken-magic-wand.jpg';
