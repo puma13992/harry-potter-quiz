@@ -262,3 +262,40 @@ answer3.addEventListener("click", function() {
 answer4.addEventListener("click", function() {
   checkAnswer(3);
 });
+
+/**
+ * Check answers and disable button click after 
+ * click on one answer
+ */
+function checkAnswer(selectedAnswer) {
+  let correctAnswer = shuffledQuestions[questionIndex].answer;
+
+  // Disable answer buttons if one answer is clicked
+  answer1.style.pointerEvents = "none";
+  answer2.style.pointerEvents = "none";
+  answer3.style.pointerEvents = "none";
+  answer4.style.pointerEvents = "none";
+    
+  if (selectedAnswer === correctAnswer) {
+    // Answer is correct
+    document.getElementById("answer" + (selectedAnswer + 1) + "-btn").style.backgroundColor = "green";
+    answerClicked = true;
+    stopTimer();
+    correctSound();
+    incrementScore();
+    finalScore();
+    nextQuestionButton.style.display = "initial";
+
+  } else {
+    // Answer is wrong
+    document.getElementById("answer" + (selectedAnswer + 1) + "-btn").style.backgroundColor = "red";
+    stopTimer();
+    incorrectSound();
+    incrementWrongScore();
+
+    // Correct answer gets green background
+    document.getElementById("answer" + (correctAnswer + 1) + "-btn").style.backgroundColor = "green";
+    answerClicked = true;
+    nextQuestionButton.style.display = "initial";
+  }
+}
