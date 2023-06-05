@@ -323,3 +323,11 @@ function incrementWrongScore() {
   score++;
   scoreElement.innerHTML += "<img src='" + wrongImage + "' class='p-2'>";
 }
+
+// Variables for final score
+let scoreMessage = document.getElementById("score-message");
+let scoreImage = document.getElementById("score-image");
+const imageRon = 'assets/images/ron-weasley-sketch.png';
+const imageHarry = 'assets/images/harry-potter-sketch.png';
+const imageHermione = 'assets/images/hermione-granger-sketch.png';
+const imageDumbledore = 'assets/images/albus-dumbledore-sketch.png';
