@@ -410,3 +410,19 @@ function finalScore() {
     }
   }
 }
+
+/**
+ * Show the end section with the final score 
+ * and number of questions
+ */
+function showEndSection() {
+  mainSection.style.display = "none";
+  difficultySection.style.display = "none";
+  quizSection.style.display = "none";
+  endSection.style.display = "block";
+
+  // Show number of questions
+  let numberQuestionsElement = document.getElementById("number-questions");
+  let numberQuestions = maxQuestions.length+1;
+  numberQuestionsElement.textContent = numberQuestions.toString();
+}
