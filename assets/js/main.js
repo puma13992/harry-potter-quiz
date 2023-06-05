@@ -305,3 +305,12 @@ let score = 0;
 let scoreElement = document.getElementById("score");
 let correctImage = 'assets/images/hogwarts-logo.png';
 let wrongImage = 'assets/images/broken-magic-wand.jpg';
+
+/**
+ * Current score of correct answers
+ * are shown with images and increment by 1
+ */
+function incrementScore() {
+  score++;
+  scoreElement.innerHTML += "<img src='" + correctImage + "' class='p-2'>";
+}
