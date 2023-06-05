@@ -314,3 +314,12 @@ function incrementScore() {
   score++;
   scoreElement.innerHTML += "<img src='" + correctImage + "' class='p-2'>";
 }
+
+/**
+ * Current score of correct and incorrect answers
+ * are shown with images and increment by 1
+ */
+function incrementWrongScore() {
+  score++;
+  scoreElement.innerHTML += "<img src='" + wrongImage + "' class='p-2'>";
+}
