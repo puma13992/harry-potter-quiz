@@ -1,108 +1,93 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Harry Potter Quiz
 
-Welcome Sarah Topfstädt,
+This site is intended to play a multiple choice game with questions about Harry Potter.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Harry Potter Quiz](assets/images/readme/mock-up-screens.JPG)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features
 
-## Gitpod Reminders
+### Existing features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- __Start screen__
+  - This section shows an introduction to the game, an instruction icon which opens an instruction modal by clicking and an audio icon.
+  - The user can toggle the audio on or off.
+  - The user have to type his/her name into the input field to go further.
+  - If the input field is empty or the name has less than 3 characters, an error message is shown.
 
-`python3 -m http.server`
+![Start Screen](assets/images/readme/start-screen.JPG)
+![Start Screen Error Message](assets/images/readme/start-screen-error.JPG)
 
-A blue button should appear to click: _Make Public_,
+- __Instruction screen__
+  - The user can click on the icon to open the instruction modal.
+  - The instruction icon appears on the start and level screen.
 
-Another blue button should appear to click: _Open Browser_.
+![Instruction Screen](assets/images/readme/instruction-screen.JPG)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __Level screen__
+  - The user can choose four different levels: Easy, medium, hard or professional.
+  - Each level has a different number of questions.
+  - The username appears on the top of the section.
+  - Also the instruction and audio icon appear.
 
-A blue button should appear to click: _Make Public_,
+![Level Screen](assets/images/readme/level-screen.JPG)
 
-Another blue button should appear to click: _Open Browser_.
+- __Question screen__
+  - The question screen shows one question at the time. 
+  - Only after clicking on one answer option, the next question button appears.
+  - If the answer is correct, the button turns green and the Hogwarts logo appears at the bottom of the section.
+  - If the answer is incorrect, the button turns red, the correct answer button turns green and a broken magic wand appears at the bottom of the section.
+  - The player will have 30 seconds to answer any question regardless of difficulty level.
+  - Time will reset back to 30 seconds upon loading the next question.
+  - Time will visibly turn red when the time left is 10 seconds or less.
+  - If no answer is chosen and no time left, the correct answer turns green but the image for an incorrect answer appears.
+  - The username appears on the top of the section.
+  - Also the audio icon appears and a timer.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Question Screen](assets/images/readme/question-screen.JPG)
+![Question Screen Correct Answer](assets/images/readme/question-screen-correct.JPG)
+![Question Screen Incorrect Answer](assets/images/readme/question-screen-incorrect.JPG)
+![Question Screen No Answer](assets/images/readme/question-screen-no-answer.JPG)
+![Question Screen Timer](assets/images/readme/question-screen-timer.JPG)
 
-To log into the Heroku toolbelt CLI:
+- __End screen__
+  - The end screen contains the final score and shows a message and an image.
+  - The message and image depend on the final score.
+  - There are four messages and images in total.
+  - The username appears on the top of the section.
+  - Also the audio icon and a try again button appear.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![End Screen](assets/images/readme/end-section.JPG)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Footer section__
+  - The footer appears on each section.
+  - The footer contains a copyright.
 
-------
+![Footer section](assets/images/readme/footer.jpg)
 
-## Release History
+### Features Left to Implement
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- There are no features left to implement.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Technologies used
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Languages used
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- HTML5: Provides the content and structure for the website.
+- CSS: Provides the styling for the website.
+- JavaScript: Provides the functionality of the website.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Frameworks - Libraries - Programs Used
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- [Bootstrap v5.3.0-alpha3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+  - Bootstrap to use prebuilt grid system and components, like buttons, carousels and nav bars.
+- [Git](https://git-scm.com/)
+  - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- [Github](https://github.com/)
+  - GitHub is used to store the project's code after being pushed from Git.
+- [Am I Responsive](http://ami.responsivedesign.is/) 
+    - Am I responsive was used to create the multi-device mock-up you can see at the start of this README.md file.
+- [Favicon.io](https://favicon.io/)
+    - Favicon.io for making the site favicon
+- [Chrome dev tools](https://developer.chrome.com/docs/devtools/)
+    - Chrome dev tools were used for debugging of the code and check site for responsiveness.
+- [WC3 Validator](https://validator.w3.org/), [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) and [JShint](https://jshint.com/) were all used to validate the website.
