@@ -434,5 +434,5 @@ function showEndSection() {
  * https://github.com/MikeR94/CI-Project-Portfolio-2/blob/main/assets/js/main.js 
  */
 document.getElementById("try-again-btn").addEventListener("click", function reload() {
-  window.location.reload();
+  window.location.href = window.location;
 });
