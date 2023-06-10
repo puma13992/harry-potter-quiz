@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 const questions = [
     {
       question: "What is the name of the house ghost of Ravenclaw?",

@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 /**
  * Timer code used from the Astronomy quiz project
  * https://github.com/MikeR94/CI-Project-Portfolio-2/blob/main/assets/js/timer.js 

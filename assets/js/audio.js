@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 /**
  * All audio code used from the Astronomy quiz project
  * https://github.com/MikeR94/CI-Project-Portfolio-2/blob/main/assets/js/audio.js 
