@@ -151,3 +151,18 @@ The website development was created in the "main" branch. This branch was deploy
 6. The link to the live website was ready on the top.
 
 The live link can be found here - [Live Website](https://puma13992.github.io/harry-potter-quiz/)
+
+## Credits
+
+### Content
+
+- Some code were taken from:
+  - Function for checkingUsername and input of username using by pressing enter key were taken from the [Sunshine Guessing Game](https://github.com/aleksandracodes/CI_PP2_SunshineGuessing/tree/main/assets)
+  - Functions for audio, timer and play again were taken from the [Astronomy game](https://github.com/MikeR94/CI-Project-Portfolio-2/tree/main/assets/js 	)
+  - Functions to calculate the endScore and the CSS code for the difficulty-btn::after were taken from the Love Math Walkthrough Project from [Code Institute](https://codeinstitute.net/).
+- The icons were taken from [Bootstrap](https://icons.getbootstrap.com/).
+
+### Media
+
+- The pictures were taken from [Pixabay](https://pixabay.com/).
+- The sounds were taken from [YouTube](https://www.youtube.com/) and [freesound](https://freesound.org/).
