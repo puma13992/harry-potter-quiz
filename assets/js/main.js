@@ -340,7 +340,7 @@ const imageDumbledore = 'assets/images/albus-dumbledore-sketch.png';
  */
 function finalScore() {
   let endScore = parseInt(document.getElementById("score-correct").innerText);
-  document.getElementById("score-correct").innerText = endScore + 1;
+  document.getElementById("score-correct").innerText = ++endScore;
 
   // Level easy
   if (getLevel === "easy") {
