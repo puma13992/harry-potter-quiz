@@ -132,3 +132,22 @@ The testing was done using the Google Chrome Browser. Chrome Developer Tools was
   ![Desktop Results](assets/images/readme/lighthouse-desktop.JPG)
 - Mobile Results:
   ![Mobile Results](assets/images/readme/lighthouse-mobile.JPG)
+
+### Unfixed bugs
+
+There are no unfixed bugs.
+
+## Deployment
+
+The website development was created in the "main" branch. This branch was deployed using GitHub Pages.
+
+- This site was deployed by completing the following steps:
+
+1. Open [GitHub](https://github.com/).
+2. Click on the project to be deployed.
+3. Navigate to the "Settings".
+4. Navigate down to the "GitHub Pages".
+5. Select the "main" branch and select "Save".
+6. The link to the live website was ready on the top.
+
+The live link can be found here - [Live Website](https://puma13992.github.io/harry-potter-quiz/)
