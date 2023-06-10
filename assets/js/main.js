@@ -421,6 +421,13 @@ function showEndSection() {
   quizSection.style.display = "none";
   endSection.style.display = "block";
 
+  // Show message and image if the user has zero points
+  let nullPoints = document.getElementById("score-correct");
+  if (nullPoints.innerHTML == 0) {
+    scoreMessage.innerText = "Zero points? Really?";
+    scoreImage.innerHTML = "<img src='" + imageRon + "' class='img-fluid p-2'>";
+  } 
+
   // Show number of questions
   let numberQuestionsElement = document.getElementById("number-questions");
   let numberQuestions = maxQuestions.length+1;
