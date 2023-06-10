@@ -91,3 +91,44 @@ This site is intended to play a multiple choice game with questions about Harry 
 - [Chrome dev tools](https://developer.chrome.com/docs/devtools/)
     - Chrome dev tools were used for debugging of the code and check site for responsiveness.
 - [WC3 Validator](https://validator.w3.org/), [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) and [JShint](https://jshint.com/) were all used to validate the website.
+
+## Testing
+
+The W3C Markup Validator, W3C CSS Validator and JShint Services were used to validate the pages to ensure there were no syntax errors in the project.
+
+### Validator Testing
+
+- __HTML__
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fpuma13992.github.io%2Fharry-potter-quiz%2F).
+
+- __CSS__
+  - No errors were found when copy the styles.css in the official Jigsaw validator but when running the link, some issues showed up from the external library Bootstrap [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpuma13992.github.io%2Fharry-potter-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=de)
+
+- __JS__
+  - No errors were found when passing through the official [JS validator](https://jshint.com/).
+
+Google Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on both Desktop and Mobile devices.
+
+The testing was done using the Google Chrome Browser. Chrome Developer Tools was used extensively, particularly to check responsiveness on different screen sizes. Testing was also done using Edge and Firefox on desktop, and again on an iPad Mini and iPhone using Safari.
+
+- Responsive on all device sizes between 280px - 2600px wide
+- Devices tested using the Google Developer Tools emulator:
+  - iPhone SE (375x667px)
+  - iPhone XR (414x896px)
+  - iPhone 12 Pro (390x844px)
+  - Pixel 5 (393x851px)
+  - Samsung Galaxy S8+ (360x740px)
+  - Samsung Galaxy S20 Ultra (412x915px)
+  - iPad Air (820x1180px)
+  - iPad Mini (768x1024px)
+  - Surface Pro 7 (912x1368px)
+  - Surface Duo (540x720px)
+  - Galaxy Fold (280x653px)
+  - Samsung Galaxy A15/71 (412x912px)
+  - Nest Hub (1024x600px)
+  - Nest Hub Max (1280x800px)
+
+- Desktop Results:
+  ![Desktop Results](assets/images/readme/lighthouse-desktop.JPG)
+- Mobile Results:
+  ![Mobile Results](assets/images/readme/lighthouse-mobile.JPG)
