@@ -5,7 +5,7 @@ body {
     }
   
 /*Fonts*/
-h1, h2, h3, h4, h5, h6, p, b, li, span {
+h1, h2, h3, h4, h5, h6, p, b, li, span, a {
     font-family: serif;
   }
   
@@ -17,6 +17,11 @@ p {
     font-family: serif!important;
     font-size: 1.2rem!important;
   }
+
+/*Link color*/
+a {
+  color: #fff!important;
+}
 
 /*Container positions*/
 .container {
