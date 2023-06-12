@@ -11,7 +11,8 @@ This site is intended to play a multiple choice game with questions about Harry 
 - __Start screen__
   - This section shows an introduction to the game, an instruction icon which opens an instruction modal by clicking and an audio icon.
   - The user can toggle the audio on or off.
-  - The user have to type his/her name into the input field to go further.
+  - The audio icon appears on the left side.
+  - The user has to type his/her name into the input field to go further.
   - If the input field is empty or the name has less than 3 characters, an error message is shown.
 
 ![Start Screen](assets/images/readme/start-screen.JPG)
@@ -19,15 +20,15 @@ This site is intended to play a multiple choice game with questions about Harry 
 
 - __Instruction screen__
   - The user can click on the icon to open the instruction modal.
-  - The instruction icon appears on the start and level screen.
+  - The instruction icon appears on the start and level screen on the right side.
 
 ![Instruction Screen](assets/images/readme/instruction-screen.JPG)
 
 - __Level screen__
   - The user can choose four different levels: Easy, medium, hard or professional.
   - Each level has a different number of questions.
-  - The username appears on the top of the section.
-  - Also the instruction and audio icon appear.
+  - The username appears on the top of the section in the middle.
+  - Also the instruction and audio icon appear again.
 
 ![Level Screen](assets/images/readme/level-screen.JPG)
 
@@ -36,12 +37,12 @@ This site is intended to play a multiple choice game with questions about Harry 
   - Only after clicking on one answer option, the next question button appears.
   - If the answer is correct, the button turns green and the Hogwarts logo appears at the bottom of the section.
   - If the answer is incorrect, the button turns red, the correct answer button turns green and a broken magic wand appears at the bottom of the section.
-  - The player will have 30 seconds to answer any question regardless of difficulty level.
+  - The player has 30 seconds to answer any question regardless of difficulty level.
   - Time will reset back to 30 seconds upon loading the next question.
-  - Time will visibly turn red when the time left is 10 seconds or less.
+  - The timer turns red when the time left is 10 seconds or less.
   - If no answer is chosen and no time left, the correct answer turns green but the image for an incorrect answer appears.
-  - The username appears on the top of the section.
-  - Also the audio icon appears and a timer.
+  - The username appears on the top of the section in the middle.
+  - Also the audio icon appears on the left side and a timer on the right side.
 
 ![Question Screen](assets/images/readme/question-screen.JPG)
 ![Question Screen Correct Answer](assets/images/readme/question-screen-correct.JPG)
@@ -53,8 +54,8 @@ This site is intended to play a multiple choice game with questions about Harry 
   - The end screen contains the final score and shows a message and an image.
   - The message and image depend on the final score.
   - There are four messages and images in total.
-  - The username appears on the top of the section.
-  - Also the audio icon and a try again button appear.
+  - The username appears on the top of the section in the middle.
+  - Also the audio icon appears on the left side and a try again button at the bottom of the section.
 
 ![End Screen](assets/images/readme/end-section.JPG)
 
@@ -79,22 +80,22 @@ This site is intended to play a multiple choice game with questions about Harry 
 ### Frameworks - Libraries - Programs Used
 
 - [Bootstrap v5.3.0-alpha3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-  - Bootstrap to use prebuilt grid system and components, like buttons, carousels and nav bars.
+  - Bootstrap was used to prebuilt the section system and some components, like buttons and icons.
 - [Git](https://git-scm.com/)
-  - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+  - Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
 - [Github](https://github.com/)
-  - GitHub is used to store the project's code after being pushed from Git.
+  - GitHub was used to store the project's code after being pushed from Git.
 - [Am I Responsive](http://ami.responsivedesign.is/) 
     - Am I responsive was used to create the multi-device mock-up you can see at the start of this README.md file.
 - [Favicon.io](https://favicon.io/)
-    - Favicon.io for making the site favicon
+    - Favicon.io was used for making the site favicon.
 - [Chrome dev tools](https://developer.chrome.com/docs/devtools/)
     - Chrome dev tools were used for debugging of the code and check site for responsiveness.
 - [WC3 Validator](https://validator.w3.org/), [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) and [JShint](https://jshint.com/) were all used to validate the website.
 
 ## Testing
 
-The W3C Markup Validator, W3C CSS Validator and JShint Services were used to validate the pages to ensure there were no syntax errors in the project.
+The W3C Validator, Jigsaw W3 Validator and JShint Services were used to validate the pages to ensure there were no syntax errors in the project.
 
 ### Validator Testing
 
@@ -102,14 +103,14 @@ The W3C Markup Validator, W3C CSS Validator and JShint Services were used to val
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fpuma13992.github.io%2Fharry-potter-quiz%2F).
 
 - __CSS__
-  - No errors were found when copy the styles.css in the official Jigsaw validator but when running the link, some issues showed up from the external library Bootstrap [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpuma13992.github.io%2Fharry-potter-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=de)
+  - No errors were found when copy the styles.css in the official Jigsaw validator but when running the link, some issues showed up from the external library Bootstrap [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpuma13992.github.io%2Fharry-potter-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=de).
 
 - __JS__
   - No errors were found when passing through the official [JS validator](https://jshint.com/).
 
-Google Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on both Desktop and Mobile devices.
+Google Lighthouse was used to test performance, best practices, accessibility and SEO on desktop and mobile devices.
 
-The testing was done using the Google Chrome Browser. Chrome Developer Tools was used extensively, particularly to check responsiveness on different screen sizes. Testing was also done using Edge and Firefox on desktop, and again on an iPad Mini and iPhone using Safari.
+The testing was done using the Google Chrome browser. Chrome developer tools were used extensively, particularly to check responsiveness on different screen sizes. Testing was also done using Edge and Firefox on desktop, and again on an iPad Mini and iPhone using Safari.
 
 - Responsive on all device sizes between 280px - 2600px wide
 - Devices tested using the Google Developer Tools emulator:
@@ -158,8 +159,8 @@ The live link can be found here - [Live Website](https://puma13992.github.io/har
 
 - Some code were taken from:
   - Function for checkingUsername and input of username using by pressing enter key were taken from the [Sunshine Guessing Game](https://github.com/aleksandracodes/CI_PP2_SunshineGuessing/tree/main/assets)
-  - Functions for audio, timer and play again were taken from the [Astronomy game](https://github.com/MikeR94/CI-Project-Portfolio-2/tree/main/assets/js 	)
-  - Functions to calculate the endScore and the CSS code for the difficulty-btn::after were taken from the Love Math Walkthrough Project from [Code Institute](https://codeinstitute.net/).
+  - Functions for audio, timer and play again were taken from the [Astronomy Quiz](https://github.com/MikeR94/CI-Project-Portfolio-2/tree/main/assets/js)
+  - Functions to calculate the endScore and the CSS code for the design of the level buttons were taken from the Love Math Walkthrough Project from [Code Institute](https://codeinstitute.net/).
 - The icons were taken from [Bootstrap](https://icons.getbootstrap.com/).
 
 ### Media
